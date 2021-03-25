@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(0 0 0 / 81%),rgb(0 0 0 / 67%)) , url(../image/b1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    }
+    .navbar{
+      width: 100%;
+      background-color: #ffffff;
+      
+  }
+  .container{
+      width: 86%;
+      margin-left: 7%;
+  }
+  .row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .row .logo{
+      float: left;  
+      margin-top: 5px;
+      margin-right: 100px;
+  }
+  .row .logo img{
+      width: 60px;
+      height: 60px;
+  }
+  .menu {
+      float: right;
+      padding-bottom: 10px;
+  }
+  .menu ul{
+      list-style: none;
+  }
+  .menu ul li{
+      display: inline-block;
+      margin: 10px;
+  }
+  .menu ul li a{
+      font-size: 1.5em;
+      text-decoration: none;
+      color:  rgb(111 53 53);
+  }
+  .menu ul li a:hover{
+          border-bottom: 3px solid rgb(111 53 53);
+  }
+  .menu-logo{
+    float: right;
+    margin: 20px;
+    display: none;
+  }
+  @media only screen and (max-width:800px){
+
+    .menu ul{
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background: #333;
+      width: 100%;
+      color: #fff; 
+      overflow: hidden; 
+      transition: all 1s ease-in-out ;z-index: 1;
+    }
+    .menu ul li {
+      display: block; 
+      margin-top: 10px;
+      margin-right: 50px;
+      margin-bottom: 10px;
+    }
+    .menu ul li a{
+     color: #fff;
+    }
+    .menu-logo{
+     display: block;
+   }
+   .row{
+     text-align: center;
+   }
+ }
+  .content{
+    position: absolute;
+    text-align: center;
+    max-width: 70%;
+    margin-left: 15%;
+    top :30%;
+    bottom: 50%;
+    color: #fff;
+    font-family:Tahoma, Arial ;
+    }
+    .title{
+      font-size: 1.3em;
+      padding: 20px;
+    }
+    .title span{
+      font-size: 1.7em;
+      color: chartreuse;
+      border-bottom: 10px solid chartreuse;
+      animation:change-look1 7s infinite alternate;
+    }
+.more{
+  position: absolute;
+    text-align: center;
+    top :85%;
+    left: 45%;
+    color: #fff;
+    font-size: 70px;
+    border-radius: 50%;
+    animation:change-look2 3s infinite alternate ;
+}
+@keyframes change-look1{
+  0%{
+       color: rgb(219, 43, 43);      border-bottom: 10px solid rgb(219, 43, 43);
+  }
+ 30%{
+    color: rgb(185, 29, 159);border-bottom: 10px solid rgb(185, 29, 159);
+  }  
+  60%{      color: chartreuse;
+    border-bottom: 10px solid chartreuse;}
+    100%{
+    color: rgb(26, 4, 68);border-bottom: 10px solid rgb(26, 4, 68);
+  }
+}
+@keyframes change-look2{
+  0%{
+        color: chartreuse;    top :80%;
+  }
+  100%{
+    color: rgb(54, 119, 194);    top :85%;
+  }
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.debut{
+  margin: 50px 0px;    perspective: 500Px;
+
+}
+.content1{
+  width: 300px;
+    height: 500px;
+    margin: 10px 0px;
+    position: relative;
+    transition: all .1s linear;
+    transform-style: preserve-3d;
+    perspective: 200Px;
+
+}
+.content1:hover{
+  transform: rotateY(180deg)
+}
+.content1 >div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    text-align: center; 
+     backface-visibility: hidden;
+}
+.front{
+  z-index: 2;
+
+}
+.front img{
+  width: 100%;
+  height: 100%;
+  filter: saturate(0.5);border-radius: 5%;
+}
+.back{
+  border-radius: 5%;
+z-index: 1;
+background-image:radial-gradient(rgba(255, 255, 255, 0.363),rgba(255, 255, 255, 0.363)) ,url(https://www.courrierinternational.com/sites/ci_master/files/styles/image_original_1280/public/assets/images/people-4528356_1920.jpg?itok=gwrD3FFI);
+background-position: center;
+background-size:cover ;
+transform: rotateY(180deg);
+}  
+.back h1{
+  border-bottom: 3px solid rgb(150, 145, 145);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.back p{
+        padding: 20px;
+        line-height: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+}
+  .front i{
+    position: absolute;
+    font-size: 3em;
+    color: #ffffff;
+    top: 90%;
+    left: 45%;
+    animation: change-look3 2s infinite alternate;
+  }
+  @keyframes change-look3{
+    0%{
+          color: chartreuse;    top :80%;
+    }
+    0%{
+      color: rgb(246, 248, 245);    top :85%;
+    }
+    100%{
+      color: rgb(54, 119, 194);    top :90%;
+    }
+  }
+  
+.elment{
+  margin: 50px 0px;
+  width: 100%;
+  background-image:radial-gradient(rgba(255, 255, 255, 0.664),rgba(255, 255, 255, 0.795)), url(../image/b1.jpg);
+
+}
+  
+  .content-1{
+    width:90%;
+    margin-left: 5%; 
+  }  
+  .image{
+    float: right;
+    width: 400px;
+    height: 500%;
+  }
+  .image img{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .info{
+    width: 400px;
+    line-height: 1.5em;
+    font-family: Arial;
+    
+
+  }
+  .info h1{
+    line-height:2em;
+    color: rgba(102, 89, 89, 0.774);
+    overflow: hidden;
+    text-decoration: underline;
+    padding: 20px;
+    text-align: center;
+
+  }
+  .info p{
+    text-align: center;
+    padding: 20px;
+    color: #333;
+  }
+  @media only screen and (max-width:1100px){
+    .line{
+      display: none;
+    }
+  }  
+  .pub{
+    margin: 100px 0px;
+  }
+
+  .im{
+    width: 150px;
+    height: 100px;
+    border: 1px solid #333;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 18px 8px rgba(51, 51, 51, 0.541);
+    filter: grayscale(100%);
+    transition: all 1s;
+  }
+  .im img{
+    width: 100%;
+    height: 100%;
+  }
+  .im:hover{
+    filter: grayscale(0%);
+    box-shadow: none;
+
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
