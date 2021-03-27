@@ -1,3 +1,3 @@
 # RabatWebSite
 ## this is web site is responsive with all device i used flip card ... 
-###### https://github.com/MouadAmzil/RabatWebSite/index/html
+###### https://mouadamzil.github.io/RabatWebSite/index.html
